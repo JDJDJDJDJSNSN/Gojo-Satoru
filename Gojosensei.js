@@ -1154,10 +1154,10 @@ Please @${m.mentionedJid[0].split`@`[0]} To Type Accept/Reject`
             let jawab = `「مبروك واعتبره/ا زوجك/تك 🤡」◣
 
 @${me.split('@')[0]} ❤️ @${jodoh.split('@')[0]}
-「اضغط اقبل اذا موافق 😂🤡」◣`
+「اضغط اقبل اذا موافق 」◣`
             let ments = [me, jodoh]
             let buttons = [
-                        { buttonId: '「اقبل🤗」◣', buttonText: { displayText: '「اقبل🤗」◣' }, type: 1 }
+                        { buttonId: '「اقبل」◣', buttonText: { displayText: '「اقبل🤗」◣' }, type: 1 }
                     ]
                     await GojoMdNx.sendButtonText(m.chat, buttons, jawab, GojoMdNx.user.name, m, {mentions: ments})
             }
@@ -1168,8 +1168,8 @@ Please @${m.mentionedJid[0].split`@`[0]} To Type Accept/Reject`
             let orang = member[Math.floor(Math.random() * member.length)]
             let jodoh = member[Math.floor(Math.random() * member.length)]
             let jawab = `@${orang.split('@')[0]} ❤️ @${jodoh.split('@')[0]}
-	    「 معلش زوجناكم لأنكم تصلحون لبعض 🤡 」◣
-	    「 الي يشوفهم مناسبين لبعض زيي يضغط يب 🤡 」◣`
+	    「 معلش زوجناكم لأنكم تصلحون لبعض  」◣
+	    「 الي يشوفهم مناسبين لبعض زيي يضغط يب  」◣`
             let menst = [orang, jodoh]
             let buttons = [
                         { buttonId: '「 يب هم مناسبين لبعض😂🤡 」◣', buttonText: { displayText: '「 يب هم مناسبين لبعض😂🤡 」◣' }, type: 1 }
@@ -1292,10 +1292,10 @@ GojoMdNx.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${san
             let me = m.sender
             let jodoh = member[Math.floor(Math.random() * member.length)]
             let jawab = `「 اكبر *${command}* في الجروب هو @${jodoh.split('@')[0]} 」◣
-	    「 صح؟ 🥲 」◣`
+	    「 صح؟  」◣`
             let ments = [me, jodoh]
             let buttons = [
-                        { buttonId: '「 يب 😂 」◣', buttonText: { displayText: '「 يب 😂 」◣' }, type: 1 }
+                        { buttonId: '「 يب  」◣', buttonText: { displayText: '「 يب 😂 」◣' }, type: 1 }
                     ]
                     await GojoMdNx.sendButtonText(m.chat, buttons, jawab, GojoMdNx.user.name, m, {mentions: ments})
             }
@@ -1443,7 +1443,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
                 if (!isAdmins) return replay(`${mess.admin}`)
 let teks = `「المنشن الجماعي」◣
  
- ➲ *${q ? q : 'اصحو من النوم'}*\n\n`
+ ➲ *${q ? q : 'تفاعلو'}*\n\n`
                 for (let mem of participants) {
                 teks += `👤 @${mem.id.split('@')[0]}\n`
                 }
@@ -1765,10 +1765,10 @@ break
                                     id: 'owner'
                                 }
                             }]
-                      let txt = `「 غوجو ساتورو موجود 🎉 」\n\n${text}`
+                      let txt = `「  كاتاكوري موجود  」\n\n${text}`
                       GojoMdNx.send5ButImg(i, txt, GojoMdNx.user.name, global.thumb, btn)
                     }
-                reply(`「 تم  ✌ 」◣`)
+                reply(`「 تم   」◣`)
             }
             break
             case 'رسالة.جماعية': case 'رسالة.جماعية.الكل': case 'bcall': {
@@ -1799,10 +1799,10 @@ break
                                     id: 'owner'
                                 }
                             }]
-                      let txt = `「 غوجو ساتورو موجود 🎉」\n\n${text}`
+                      let txt = `「    كاتاكوري 」\n\n${text}`
                       GojoMdNx.send5ButImg(yoi, txt, GojoMdNx.user.name, global.thumb, btn)
 		}
-		reply('「 تم 🤗 」◣')
+		reply('「 تم  」◣')
             }
             break
             case 'chatinfo': case 'infochat': {
@@ -3382,17 +3382,17 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./GojoMedia/ko.jpg')},
                             hydratedFooterText: `┌─❖
-┌─❖ مـرحبـاً 🤗 」
+┌─❖ مـرحبـاً  」
 └┬❖ 「 ${pushname} 」
-││✑「مـعـك بـوت غـوجـو 👋🏻」◣
-││✑「مـن مـمـلـكـة غولد 🤗」◣
+││✑「مـعـك بـوت كاتاكوري 」◣
+││
 │└───────────────┈ ⳹
  「 مـعـلـومـات عـن الـبـوت 」
-│✙「 اسـم الـبـوت 」◣ : 「 غوجو ✨🤞🏻 」◣
-│✙「 رقـم الـمـالـك 」◣ : ${global.owner}
+│✙「 اسـم الـبـوت 」◣ : 「 اتاكوري  」◣
+│✙「 رقـم الـمـالـك 」◣ : ${ +967730068059 }
 │✙「عـدد الـمـسـتـخـدمـيـن」◣ : ${Object.keys(global.db.data.users).length}
 └┬──────────────┈ ⳹
-   │✑  「 اضـغـط عـلـى الـخـيـارات 🤗 」◣
+   │✑  「 اضـغـط عـلـى الـخـيـارات  」◣
    └───────────────┈ ⳹`,
                              hydratedButtons: [{
                                 urlButton: {
@@ -3437,17 +3437,17 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./GojoMedia/gojo.jpg')}, 
                             hydratedFooterText: `
-┌─❖ مـرحبـاً 🤗 」
+┌─❖ مـرحبـاً  」
 └┬❖ 「 ${pushname} 」
-││✑「مـعـك بـوت غـوجـو 👋🏻」◣
-││✑「مـن مـمـلـكـة غولد 🤗」◣
+││✑「مـعـك بـوت كاتاكوري 」◣
+││
 │└───────────────┈ ⳹
  「 مـعـلـومـات عـن الـبـوت 」
-│✙「 اسـم الـبـوت 」◣ : 「 غوجو ✨🤞🏻 」◣
-│✙「 رقـم الـمـالـك 」◣ : ${global.owner}
+│✙「 اسـم الـبـوت 」◣ : 「 كاتاكوري  」◣
+│✙「 رقـم الـمـالـك 」◣ : ${ +967730068059 }
 │✙「عـدد الـمـسـتـخـدمـيـن」◣ : ${Object.keys(global.db.data.users).length}
 └┬──────────────┈ ⳹
-   │✑  「 اضـغـط عـلـى الـخـيـارات 🤗 」◣
+   │✑  「 اضـغـط عـلـى الـخـيـارات 」◣
    └───────────────┈ ⳹`,
                             hydratedButtons: [{
                                 urlButton: {
@@ -3484,17 +3484,15 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 	case 'الاوامر': case 'اوامر': {
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
-                    title: `「 مرحبا 👋🏻  」◣
-		    「 معك بوت غوجو 🤗 」◣
+                    title: `「 مرحبا   」◣
+		    「 معك بوت كاتاكوري  」◣
 		    「 افضل بوت عربي 」◣
 
- 「 رابط شرح كيف تصنع بوت عربي طريقة سهله راقب وتعلم. ولاتنسى الاشتراك بالقناة」◣
-		    「https://youtu.be/MBPIx3f-VIA」◣
-		    「 اتمنى ان تعملو اشتراك للقناة وتنشروها اذا تقدرو عشان ينتشر المقطع كمان والكل يستفيد وجزاه الله خير الي يشترك 💖🤗」◣                 
- 「 رابط فرع التعليم على البوت」◣
-		    「https://chat.whatsapp.com/Gb62eN2S5yI9mhfdn6Ma4z」◣
-		    「 الي محتاج شروحات ينضم 」◣`,
-                    description: `「 اختر قائمة من فضلك 」◣`,
+ 「  رابط الاستقبال 」◣
+		    「 https://chat.whatsapp.com/JcsUFbIu6Id8MazFqEtrjA 」◣
+		   
+		   
+                    description: `「 اختر قائمة من فضلك 」◣
                     buttonText: "「 القائمة 」◣",
                     footerText: `「 تحت الصيانة ⚙️」◣`,
                     listType: "SINGLE_SELECT",
@@ -3619,10 +3617,10 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                 GojoMdNx.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/c15f725add0381fb69c4b.jpg' }, caption: `` }, { quoted: m })
             }
             break
-            case 'التسجhgjيل': case 'التسجيل': {
-                reply(`「 الفرع الخاص ل التعليم على البوت 」◣
+            case 'التسجhgjيل': case 'لانضمام للنقابة': {
+                reply(`「   」◣
 
-「 _https://chat.whatsapp.com/CKLmAGJo3iw5AvNM1KZee3_ 」◣
+「  https://chat.whatsapp.com/JcsUFbIu6Id8MazFqEtrjA  」◣
 
 「 نرحب بالجميع. 」◣`)
             }
